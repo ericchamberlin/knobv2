@@ -1769,12 +1769,10 @@ function nextStep() {
 function toggleFinalOverlay() {
     const overlay = document.getElementById('final-overlay');
     const darkOverlay = document.getElementById('overlay');
-    const playAgainButton = document.getElementById('play-again');
     
     if (overlay.style.display === 'block') {
         overlay.style.display = 'none';
         darkOverlay.style.display = 'none';
-        playAgainButton.style.display = 'block'; // Show play again button when overlay is closed
     } else {
         overlay.style.display = 'block';
         darkOverlay.style.display = 'block';
